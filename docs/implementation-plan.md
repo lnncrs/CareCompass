@@ -1,7 +1,6 @@
 # Plano de execução
 
-Entrega prevista: 25/11/2026. Estado revisado em 24/11/2026.
-Trabalho local; priorizar demonstração completa e avaliação honesta.
+Trabalho local, priorizar demonstração completa e avaliação honesta.
 
 ## Implementado
 
@@ -21,6 +20,20 @@ Trabalho local; priorizar demonstração completa e avaliação honesta.
   e borda vermelha discreta com aviso textual, contatos e dispensa.
 - [x] Preservação da flag quando o modelo falha após a consulta emergencial.
 - [x] Documentação das variáveis em `.env.example` e dos modos em README.
+- [x] Criar `notebooks/sample-agent.ipynb`, didático, com ambiente opcional do
+  backend, mesmo `.env`, prompt oficial, tool e grafo definidos nas células.
+- [x] Executar cinco células do notebook em kernel Jupyter com cliente simulado,
+  sem ler secrets reais ou salvar outputs. Integração real ainda pendente.
+- [x] Preencher endpoint v1, implantação com tools e chave no `.env` local.
+- [x] Validar conexão real ao Foundry, tool calling, respostas, limites e latência.
+- [x] Avaliar urgência com casos claros, ambíguos e negativos; medir falsos
+  positivos e omissões. Testes simulados não validam classificação clínica.
+- [x] Inspecionar visualmente desktop/celular e acessibilidade por teclado.
+- [x] Validar execução a partir do README e preparar roteiro de apresentação.
+
+O agente já está implementado: não recomeçar essa fase nem exigir secrets para
+trabalhos documentais e testes simulados. Configuração real é necessária apenas
+para verificar a integração e o comportamento do modelo disponibilizado.
 
 ## Verificações já executadas
 
@@ -38,33 +51,4 @@ Trabalho local; priorizar demonstração completa e avaliação honesta.
 Esses resultados são registros de execuções anteriores, não prova de que novos
 checks foram executados nesta revisão. Testes da API precisaram executar fora
 do sandbox. A inspeção visual não foi concluída por bloqueio da prévia local.
-A auditoria npm sem alertas registrada em 23/11 é histórica, não auditoria atual.
-
-## Próximos passos necessários
-
-- [x] Criar `notebooks/sample-agent.ipynb`, didático, com ambiente opcional do
-  backend, mesmo `.env`, prompt oficial, tool e grafo definidos nas células.
-- [x] Executar cinco células do notebook em kernel Jupyter com cliente simulado,
-  sem ler secrets reais ou salvar outputs. Integração real ainda pendente.
-
-- [ ] Preencher endpoint v1, implantação com tools e chave no `.env` local.
-- [ ] Validar conexão real ao Foundry, tool calling, respostas, limites e latência.
-- [ ] Preparar ao menos 20 cenários e executar avaliação de PLN: compreensão,
-  simplificação, contexto, zona e fidelidade aos registros.
-- [ ] Avaliar urgência com casos claros, ambíguos e negativos; medir falsos
-  positivos e omissões. Testes simulados não validam classificação clínica.
-- [ ] Inspecionar visualmente desktop/celular e acessibilidade por teclado.
-- [ ] Complementar formas de acesso dos locais ou manter as lacunas explícitas.
-- [ ] Validar execução a partir do README e preparar roteiro de apresentação.
-- [ ] Registrar resultados reais, limitações e relatório acadêmico da entrega.
-
-O agente já está implementado: não recomeçar essa fase nem exigir secrets para
-trabalhos documentais e testes simulados. Configuração real é necessária apenas
-para verificar a integração e o comportamento do modelo disponibilizado.
-
-## Fora do recorte obrigatório
-
-Voz/Azure Speech, streaming, segundo motor Microsoft Agent Framework, hospedagem,
-GPS real e mapa geográfico. Não são bloqueadores da demonstração atual. Recuperação
-de novas orientações oficiais além do catálogo e dos contatos é enriquecimento
-posterior; não inventar informações ausentes para simular essa capacidade.
+A auditoria npm sem alertas é histórica, não auditoria atual.

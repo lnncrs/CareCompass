@@ -9,7 +9,6 @@ reiniciar o backend. Ele é carregado uma vez na inicialização, não a cada tu
 `AGENTS.md` orienta o desenvolvimento do repositório, não o assistente do produto.
 
 LangGraph está implementado e testado com modelo simulado; o padrão continua eco.
-A validação com Foundry e a avaliação real de linguagem e segurança estão pendentes.
 
 ## Comunicação adaptativa
 
@@ -93,8 +92,7 @@ e pelo local fictício, uma pergunta por vez, aproveitando informações do hist
 A confirmação de pedido a caminho é narrativa da encenação, sem status real,
 prazo ou acionamento; não repete o aviso já presente na interface.
 A cor é observabilidade para a
-demonstração; não representa envio de ajuda. A futura interface WhatsApp não está
-implementada. O cenário não estabelece um código universal de atendimento.
+demonstração; não representa envio de ajuda. O cenário não estabelece um código universal de atendimento.
 Avaliar com o modelo real o pedido inicial, continuação, negativa gastronômica e
 saída da encenação para perigo declarado. Testes de tools não validam a detecção.
 

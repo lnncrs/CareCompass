@@ -135,13 +135,7 @@ prompt/zona exige reexecutar células; o comportamento não equivale a hot reloa
 da API. Versionar sem outputs ou contagens. Execução completa foi verificada
 com cliente simulado em kernel Jupyter, sem secrets reais ou chamada ao Foundry.
 
-### Próximas evoluções
-
-Próximo foco: validar Foundry, avaliar respostas/urgência, revisar acessibilidade
-visual e documentar resultados. Não introduzir coordenadas ou busca vetorial para
-o mock. Áudio, streaming, Agent Framework e hospedagem são adicionais.
-
-Referências técnicas:
+## Referências técnicas:
 
 - [ChatOpenAI](https://docs.langchain.com/oss/python/integrations/chat/openai)
 - [API v1 no Foundry](https://learn.microsoft.com/en-us/azure/foundry/openai/api-version-lifecycle)
@@ -150,8 +144,7 @@ Referências técnicas:
 SampleCodex orientou a base e suas licenças estão em `third-party/`.
 SampleAgent é referência de chat/streaming, sem copiar a redução de histórico à
 última mensagem ou a busca acoplada ao Agent Framework. Diabetes Mellitus
-Prediction orientou a apresentação acadêmica. Licença do projeto: PolyForm
-Noncommercial 1.0.0; preservar condições dos componentes e dados de terceiros.
+Prediction orientou a apresentação acadêmica. Licença do projeto: MIT; preservar condições dos componentes e dados de terceiros.
 
 ## Filtro por tipo de equipamento
 
