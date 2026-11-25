@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "contacts": [
+    {
+      "id": "samu", "name": "SAMU", "phone": "192",
+      "situation": "medical", "emergency": true,
+      "purpose": "Urgência ou emergência médica.", "coverage": "Brasil",
+      "source_url": "https://www.gov.br/saude/pt-br/composicao/saes/samu-192/", "checked_on": "2026-11-24"
+    },
+    {
+      "id": "police", "name": "Polícia Militar", "phone": "190",
+      "situation": "violence", "emergency": true,
+      "purpose": "Violência em andamento ou perigo imediato que exige intervenção policial.", "coverage": "Brasil",
+      "source_url": "https://www2.policiamilitar.sp.gov.br/faleconosco/faq.aspx", "checked_on": "2026-11-24"
+    },
+    {
+      "id": "firefighters", "name": "Corpo de Bombeiros", "phone": "193",
+      "situation": "fire_rescue", "emergency": true,
+      "purpose": "Incêndio, salvamento ou resgate.", "coverage": "Brasil",
+      "source_url": "https://www.ssp.sp.gov.br/servicos/coordenacao-sistema-estadual-atendimento-emergencias", "checked_on": "2026-11-24"
+    },
+    {
+      "id": "sp156", "name": "SP156", "phone": "156",
+      "situation": "shelter", "emergency": false,
+      "purpose": "Solicitação de abordagem social e encaminhamento para acolhimento; não é resgate médico.", "coverage": "Município de São Paulo",
+      "source_url": "https://prefeitura.sp.gov.br/web/popruasp/w/acolhimento", "checked_on": "2026-11-24"
+    },
+    {
+      "id": "women180", "name": "Central de Atendimento à Mulher", "phone": "180",
+      "situation": "women_support", "emergency": false,
+      "purpose": "Orientação e denúncias de violência contra mulheres. Em perigo imediato, usar 190.", "coverage": "Brasil",
+      "source_url": "https://www.gov.br/mulheres/pt-br/ligue180", "checked_on": "2026-11-24"
+    }
+  ]
+}

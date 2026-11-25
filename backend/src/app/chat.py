@@ -2,6 +2,9 @@ from typing import Literal
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
+from app.catalog import Zone
+from app.support import Urgency
+
 
 class ChatMessage(BaseModel):
     role: Literal["user", "assistant"]
@@ -16,6 +19,7 @@ class ChatMessage(BaseModel):
 
 
 class ChatRequest(BaseModel):
+    zone: Zone
     messages: list[ChatMessage] = Field(min_length=1, max_length=100)
 
     @model_validator(mode="after")
@@ -33,14 +37,17 @@ class ChatRequest(BaseModel):
 
 
 class ChatResponse(BaseModel):
+    urgency: Urgency = Field(default_factory=Urgency)
+    zone: Zone
     message: ChatMessage
-    mode: Literal["echo"] = "echo"
+    mode: Literal["echo", "langgraph"] = "echo"
 
 
 def echo_reply(request: ChatRequest) -> ChatResponse:
     """Recebe o histórico completo; nesta fase apenas ecoa o turno atual."""
     return ChatResponse(
+        zone=request.zone,
         message=ChatMessage(
             role="assistant", content=f"Você disse: {request.messages[-1].content}"
-        )
+        ),
     )
