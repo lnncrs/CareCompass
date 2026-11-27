@@ -142,6 +142,19 @@ Configure as variáveis Foundry no mesmo `.env`; o notebook usa diretamente o mo
 
 Para trocar a zona, altere `ZONE` e reexecute as células 2 a 5. Para reler o `.env`, reexecute desde a primeira. O exemplo é restrito a alimentação, sem interface ou sinalização de urgência.
 
+### Google Colab
+
+O [notebooks/sample-agent-collab.ipynb](notebooks/sample-agent-collab.ipynb)
+é uma versão independente para abrir e executar no Colab, sem checkout nem
+arquivos locais. A primeira célula instala dependências; em seguida, informe
+endpoint, implantação e chave do Foundry. A chave é solicitada sem exibição e
+fica na memória da sessão. A chamada real exige internet e pode consumir créditos.
+
+O notebook incorpora retratos do prompt e do catálogo, com procedência dos
+dados. Eles não são atualizados automaticamente; o prompt do
+backend continua sendo a fonte oficial. O exemplo usa uma pergunta fictícia fixa
+sobre alimentação e não implementa interface, contatos ou alerta de urgência.
+
 ## Prompt, contatos e configuração
 
 O prompt executável é [backend/prompts/assistant.md](backend/prompts/assistant.md). Ele orienta adaptação da linguagem, concisão, consulta às tools e tratamento de possível urgência. As diretrizes de revisão estão em [docs/assistant-behavior.md](docs/assistant-behavior.md).
@@ -201,7 +214,7 @@ Veja [data/README.md](data/README.md) para procedência, critérios de seleção
 │   ├── processed/            # Amostra JSON usada pela aplicação
 │   └── sources.json          # Manifesto de procedência
 ├── scripts/                  # Coleta, geração da amostra e testes sem rede
-├── notebooks/sample-agent.ipynb # Exemplo didático, usando o kernel do backend
+├── notebooks/                # Exemplos didáticos local e para Colab
 ├── docs/                     # Produto, arquitetura, comportamento e plano
 ├── assets/                   # Identificação acadêmica
 ├── third-party/              # Avisos de licença de arquivos reaproveitados

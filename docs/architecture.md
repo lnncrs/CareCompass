@@ -135,6 +135,14 @@ prompt/zona exige reexecutar células; o comportamento não equivale a hot reloa
 da API. Versionar sem outputs ou contagens. Execução completa foi verificada
 com cliente simulado em kernel Jupyter, sem secrets reais ou chamada ao Foundry.
 
+`notebooks/sample-agent-collab.ipynb` é uma distribuição independente para
+Colab: instala dependências, solicita os parâmetros de inferência na sessão e
+incorpora retratos do prompt oficial e do catálogo. Esses retratos não acompanham
+alterações automaticamente e devem ser
+atualizados ao preparar outra versão; a fonte executável do backend não muda.
+O exemplo mantém a pergunta fixa sobre alimentação e não implementa contatos,
+interface ou sinalização de urgência.
+
 ## Referências técnicas:
 
 - [ChatOpenAI](https://docs.langchain.com/oss/python/integrations/chat/openai)
