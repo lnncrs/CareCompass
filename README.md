@@ -7,9 +7,9 @@
 Universidade Federal do ABC - Bacharelado em Ciência e Tecnologia<br />
 MCZA017-13SA - Processamento de Linguagem Natural / 2026 Q3<br />
 
-Lenin Cristi - RA 21030114
-Arthur Vieira - RA 11202321538
-Igor Santos - RA 11202232309
+Lenin Cristi - RA 21030114<br />
+Arthur Vieira - RA 11202321538<br />
+Igor Santos - RA 11202232309<br />
 
 ## Objetivos
 
